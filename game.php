@@ -63,6 +63,7 @@ if (isset($_COOKIE["user-1"]) && isset($_COOKIE["user-2"])) {
 if (isset($_COOKIE["user-1"]) && isset($_COOKIE["user-2"])) {
     $_COOKIE["user-1"] = setcookie("user-1", $_COOKIE["user-1"], time() - 60);
     $_COOKIE["user-2"] = setcookie("user-2", $_COOKIE["user-2"], time() - 60);
+}
 
 // Form Control
 if (!isset($user1_choice)) {
@@ -124,4 +125,3 @@ if (isset($user1_choice) && isset($user2_choice)) {
 </body>
 
 </html>
-

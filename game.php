@@ -59,6 +59,11 @@ if (isset($_COOKIE["user-1"]) && isset($_COOKIE["user-2"])) {
     $user2_choiceFinal = $user2_choice;
 }
 
+//Kill Cookies excl button
+if (isset($_COOKIE["user-1"]) && isset($_COOKIE["user-2"])) {
+    $_COOKIE["user-1"] = setcookie("user-1", $_COOKIE["user-1"], time() - 60);
+    $_COOKIE["user-2"] = setcookie("user-2", $_COOKIE["user-2"], time() - 60);
+
 // Form Control
 if (!isset($user1_choice)) {
     $form1Final = $form1;

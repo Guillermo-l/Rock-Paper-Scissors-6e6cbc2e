@@ -1,0 +1,48 @@
+.all-content {
+    width: 1000;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.radio-div {
+    display: flex;
+    flex-direction: row;
+} 
+.radio-div :hover {
+    cursor: pointer;
+}
+.radio-div :checked {
+    background-color: black;
+}
+
+.form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.speler {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    font-size: 18px;
+    font-family: sans-serif;
+    
+}
+
+.outcome {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#submit {
+    display: flex;
+    align-self: center;
+}
+
+input[type="radio"] {
+    display: none;
+}

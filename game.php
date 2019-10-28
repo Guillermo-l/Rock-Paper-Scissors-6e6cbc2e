@@ -65,6 +65,12 @@
         header("Refresh:0");
     }
 
+    // 
+    if (isset($_COOKIE["user-1"]) && isset($_COOKIE["user-2"])) {
+        $form1Final = $_COOKIE["user-1"];
+        $form1 = $_COOKIE["user-2"];
+    }
+
     //Kill Cookies
     if (isset($_COOKIE["user-1"]) && isset($_COOKIE["user-2"])) {
         $_COOKIE["user-1"] = setcookie("user-1", $_COOKIE["user-1"], time() - 60);
